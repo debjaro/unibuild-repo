@@ -1,0 +1,10 @@
+name="matche-gtk-theme"
+version="20201111"
+release="1"
+source=(https://github.com/vinceliuice/Matcha-gtk-theme/archive/2020-11-11-0.tar.gz)
+summary="Matcha gtk theme"
+dessription=$summary
+
+_install(){
+bash install.sh -d "$INSTALLDIR/usr/share/themes"
+}
