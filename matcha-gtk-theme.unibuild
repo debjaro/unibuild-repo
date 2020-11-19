@@ -1,3 +1,4 @@
+#!/bin/bash
 name="matche-gtk-theme"
 version="20201111"
 release="1"
@@ -6,5 +7,6 @@ summary="Matcha gtk theme"
 dessription=$summary
 
 _install(){
-bash install.sh -d "$INSTALLDIR/usr/share/themes"
+    mkdir -p "$INSTALLDIR/usr/share/themes"
+    bash install.sh -d "$INSTALLDIR/usr/share/themes"
 }
